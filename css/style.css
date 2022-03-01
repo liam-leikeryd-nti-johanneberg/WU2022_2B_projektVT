@@ -1,33 +1,43 @@
 *{
     margin: 0;
+    font-family: 'Bitter', serif;
+    
 }
 
 body{
-    height: 100vh;
-    width: 100vw;
-    background: linear-gradient( lightgray, black);
+    height: 120vh;
+    width: 100%;
+    background: linear-gradient( rgb(233, 248, 215)
+    ,rgb(13, 46, 0) );
     background-repeat: no-repeat ;
 }
 
-.logga{
-    position: absolute;
-    top: 4%;
-    left: 50%;
-    transform: translateX(-50%);
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;   
+}
+#logga{
+
+    text-shadow: 1px 1px white;
+    font-size: 1.7rem;
 }
 
 #grid{
     padding: 5%;
-    margin-top: 100px;
+    margin-top: 10px;
     display: grid;
-    height: 100%;
-    width: 100%;
+    height: 85%;
+    width: 90%;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 90%;
+    grid-template-columns: 100%;
     grid-template-areas:
     "ba"
     "st"
     "re";
+    grid-gap: 3%;
+    
 }
 
 #Banan{
@@ -37,6 +47,7 @@ body{
     font-size: 24px;
     text-decoration: none;
     color: black;
+    border-radius: 5%;
     
 
 
@@ -46,6 +57,8 @@ body{
     grid-area: st;
     background-image: url(/img/sydney-rae-_-6iQvIunqA-unsplash.jpg);
     background-size: cover;
+    text-decoration: none;
+    border-radius: 5%;
     
 }
 
@@ -53,11 +66,41 @@ body{
     grid-area: re;
     background-image: url(/img/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
     background-size: cover;
+    text-decoration: none;
+    border-radius: 5%;
+    
     
 }
 
+
 #Banan span{
+    display: grid;
+    justify-content: center;
+    align-items: center;
     color: white;
-    margin-left: 38vw;
-    top: 10vh;
+    font-size: 2rem;
+    text-shadow: 2px 2px black;
 }
+
+#Affar span{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem ;
+    text-decoration: none;
+    text-shadow: 2px 2px black;
+}
+
+
+
+#Resturang span{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    text-shadow: 2px 2px black;
+}
+
