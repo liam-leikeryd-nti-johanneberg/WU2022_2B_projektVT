@@ -5,11 +5,11 @@
 }
 
 body{
-    height: 120vh;
-    width: 100%;
     background: linear-gradient( rgb(233, 248, 215)
     ,rgb(13, 46, 0) );
     background-repeat: no-repeat ;
+    position: relative;
+    min-height: 100vh;
 }
 
 header{
@@ -17,21 +17,21 @@ header{
     justify-content: center;
     align-items: center;
     height: 80px;   
+    width: auto;
 }
 h1{
-
-    text-shadow: 1px 1px white;
     font-size: 1.7rem;
+    text-shadow: white, 2px;
 }
 
 #grid{
     padding: 5%;
     margin-top: 10px;
     display: grid;
-    height: 85%;
+    height: 100%;
     width: 90%;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr;
     grid-template-areas:
     "ba"
     "st"
@@ -110,12 +110,13 @@ h1{
     position: absolute;
     right: 10%;
     top: 3%;
+    z-index: 100;
 }
 
 .burger div{
     width: 30px;
     height: 3px;
-    background-color: white;
+    background-color: black;
     margin: 5px;
     border-radius: 20px;
     transition: all 0.5s;
@@ -133,4 +134,60 @@ h1{
     transform: rotate(45deg) translate(-4px, -6px);
 }
 
+.nav {
+    display: grid;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    width: 90%;
+    left: -70vh;
+    background: linear-gradient( rgb(13, 46, 0),rgb(233, 248, 215) );
+    transition: all 1s;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "st"
+    "bu"
+    "re";
+
+}
+
+.navbar_active{
+    transform: translateX(70vh);
+}
+
+#butik{
+    grid-area: bu;
+    
+    
+}
+
+#startsida{
+    grid-area: st;
+    
+}
+#resturang{
+    grid-area: re;
+    
+}
+
+
+ul{
+    font-size: 1.7rem;
+    margin-top: 50%;
+    font-weight: bold;
+    margin-left: 15%;
+    
+}
+
+ul a {
+    text-decoration: none;
+    color: black;
+    
+
+}
+
+#banatop{
+    z-index: 100;
+}
 

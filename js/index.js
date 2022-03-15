@@ -1,8 +1,8 @@
 const burger = document.querySelector('.burger')
-const nav = document.querySelector('.navbar_wrapper')
+const nav = document.querySelector('.nav')
 
 function toggleMenu() {
-    // nav.classList.toggle('navbar_active')
+    nav.classList.toggle('navbar_active')
     burger.classList.toggle('toggle')
 }
 
