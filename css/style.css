@@ -1,12 +1,12 @@
 *{
     margin: 0;
     font-family: 'Bitter', serif;
+    padding: 0;
     
 }
 
 body{
-    background: linear-gradient( rgb(233, 248, 215)
-    ,rgb(13, 46, 0) );
+    background: lightblue;
     background-repeat: no-repeat ;
     position: relative;
     min-height: 100vh;
@@ -21,14 +21,14 @@ header{
 }
 h1{
     font-size: 1.7rem;
-    text-shadow: white, 2px;
+    text-shadow: 1.2px 1.2px white;
 }
 
 #grid{
     padding: 5%;
     margin-top: 10px;
     display: grid;
-    height: 100%;
+    height: 700px;
     width: 90%;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr;
@@ -47,8 +47,7 @@ h1{
     font-size: 24px;
     text-decoration: none;
     color: black;
-    border-radius: 5%;
-    
+    border-radius: 50px;
 
 
 }
@@ -58,8 +57,7 @@ h1{
     background-image: url(/img/sydney-rae-_-6iQvIunqA-unsplash.jpg);
     background-size: cover;
     text-decoration: none;
-    border-radius: 5%;
-    
+    border-radius: 50px;
 }
 
 #Resturang{
@@ -67,7 +65,7 @@ h1{
     background-image: url(/img/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
     background-size: cover;
     text-decoration: none;
-    border-radius: 5%;
+    border-radius: 50px;
     
     
 }
@@ -79,7 +77,7 @@ h1{
     align-items: center;
     color: white;
     font-size: 2rem;
-    text-shadow: 2px 2px black;
+    text-shadow: 1.5px 1.5px black;
 }
 
 #Affar span{
@@ -89,7 +87,7 @@ h1{
     color: white;
     font-size: 2rem ;
     text-decoration: none;
-    text-shadow: 2px 2px black;
+    text-shadow: 1.5px 1.5px black;
 }
 
 
@@ -101,15 +99,15 @@ h1{
     color: white;
     font-size: 2rem;
     text-decoration: none;
-    text-shadow: 2px 2px black;
+    text-shadow: 1.5px 1.5px black;
 }
 
 .burger{
     width: 20px;
     height: 20px;
-    position: absolute;
+    position: fixed;
     right: 10%;
-    top: 3%;
+    top: 2.5%;
     z-index: 100;
 }
 
@@ -135,13 +133,18 @@ h1{
 }
 
 .nav {
+    z-index: 99;
     display: grid;
-    position: absolute;
-    height: 100%;
-    top: 0;
-    width: 90%;
-    left: -70vh;
-    background: linear-gradient( rgb(13, 46, 0),rgb(233, 248, 215) );
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    justify-content: center ;
+    text-align: center;
+    align-items: center;
+    top: 0; 
+    bottom: 0;
+    left: -100%;
+    background: lightcyan;
     transition: all 1s;
     grid-template-rows: 1fr 1fr 1fr ;
     grid-template-columns: 100%;
@@ -153,41 +156,135 @@ h1{
 }
 
 .navbar_active{
-    transform: translateX(70vh);
+     left: 0; 
 }
 
 #butik{
-    grid-area: bu;
-    
-    
+    grid-area: bu;    
 }
 
 #startsida{
     grid-area: st;
-    
 }
-#resturang{
+#resturang1{
     grid-area: re;
-    
 }
 
 
-ul{
+li{
     font-size: 1.7rem;
-    margin-top: 50%;
     font-weight: bold;
-    margin-left: 15%;
+    margin-top: 100px;
+    text-decoration: none;
+    
     
 }
 
-ul a {
+li a {
     text-decoration: none;
     color: black;
-    
-
+    list-style: none;
 }
+
 
 #banatop{
     z-index: 100;
-}
+    font-weight: bolder;
+    font-size: 2rem;
+    text-shadow: 1px 1px white;
+    position: fixed;
+    }
 
+
+    #banans-grid{
+        position: absolute;
+        top: 15vh;
+        display: grid;
+        height: auto;
+        width: 100%;
+        grid-template-columns: 10% 1fr 10%;
+        grid-template-rows: 40px 400px 400px 40px 400px 400px 40px 400px 400px ;
+        /* justify-content: center ; */
+        text-align: center;
+
+        /* align-items: center; */
+        grid-template-areas:    
+        ".. r1 .."
+        ".. b1 .."
+        ".. p1 .."
+        ".. r2 .."
+        ".. b2 .."
+        ".. p2 .. "
+        ".. r3 .."
+        ".. b3 .. "
+        ".. p3 .."
+      ;
+    }
+
+    
+
+   
+
+    #rubrik1{
+        grid-area: r1;}
+
+    #bild1{
+        grid-area: b1;
+        background-image: url(../img/overview.jpg);
+        border-radius: 50px;
+        background-size: cover;
+    }
+
+    #text1{
+        grid-area: p1;
+        position: absolute;
+        top: 5%;
+    }
+    
+    #rubrik2{
+        grid-area: r2;
+    }
+
+    #bild2{
+        grid-area: b2;
+        background-image: url(/img/karaktär.jpg);
+        border-radius: 50px;
+        background-size: cover;
+    }
+
+    #text2{
+        grid-area: p2;
+        position: absolute;
+        top: 5%;    
+    }
+
+    #rubrik3{
+        grid-area: r3;
+    }
+
+    #bild3{
+        grid-area: b3;
+        background-image: url(/img/bunker.jpg);
+        border-radius: 50px;
+        background-size: cover;
+    }
+
+    #text3{
+        grid-area: p3;
+        position: absolute;
+        top: 5%;
+    }
+
+    h2{
+        text-shadow: 1px 1px white ;
+    }
+
+    #text1, #text2, #text3, p{
+        text-shadow: 1px 1px white;
+    }
+
+@media screen and (min-width: 1000px) {
+    #grid{
+        height: 1300px;
+    }
+}
