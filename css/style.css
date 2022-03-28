@@ -6,7 +6,7 @@
 }
 
 body{
-    background: lightblue;
+    background: white;
     background-repeat: no-repeat ;
     position: relative;
     min-height: 100vh;
@@ -17,18 +17,48 @@ header{
     justify-content: center;
     align-items: center;
     height: 80px;   
+
+}
+
+.foggy1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;   
     width: auto;
+    background-color:rgba(68, 60, 60, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+}
+
+.foggy2{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;   
+    width: auto;
+    background-color:rgba(68, 60, 60, 0.8);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    
 }
 h1{
-    font-size: 1.7rem;
-    text-shadow: 1.2px 1.2px white;
+    color: white;
+    font-size: 1.6rem;
+    text-shadow: 1.5px 1.5px black;
 }
 
 #grid{
     padding: 5%;
     margin-top: 10px;
     display: grid;
-    height: 700px;
+    height: 83vh;
     width: 90%;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr;
@@ -44,7 +74,6 @@ h1{
     grid-area: ba;
     background-image: url(/img/allan-nygren--xvKQuNtOhI-unsplash.jpg);
     background-size: cover;
-    font-size: 24px;
     text-decoration: none;
     color: black;
     border-radius: 50px;
@@ -71,33 +100,30 @@ h1{
 }
 
 
-#Banan span{
-    display: grid;
+#Banan h2{
+    display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 2rem;
     text-shadow: 1.5px 1.5px black;
 }
 
-#Affar span{
-    display: grid;
+#Affar h2{
+    display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 2rem ;
     text-decoration: none;
     text-shadow: 1.5px 1.5px black;
 }
 
 
 
-#Resturang span{
-    display: grid;
+#Resturang h2{
+    display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 2rem;
     text-decoration: none;
     text-shadow: 1.5px 1.5px black;
 }
@@ -107,14 +133,14 @@ h1{
     height: 20px;
     position: fixed;
     right: 10%;
-    top: 2.5%;
-    z-index: 100;
+    top: 3%;
+    z-index: 10001;
 }
 
 .burger div{
     width: 30px;
     height: 3px;
-    background-color: black;
+    background-color: white;
     margin: 5px;
     border-radius: 20px;
     transition: all 0.5s;
@@ -144,7 +170,7 @@ h1{
     top: 0; 
     bottom: 0;
     left: -100%;
-    background: lightcyan;
+    background: lightgrey;
     transition: all 1s;
     grid-template-rows: 1fr 1fr 1fr ;
     grid-template-columns: 100%;
@@ -188,37 +214,35 @@ li a {
 
 
 #banatop{
+    color: white;
     z-index: 100;
     font-weight: bolder;
-    font-size: 2rem;
-    text-shadow: 1px 1px white;
+    text-shadow: 1.5px 1.5px black;
     position: fixed;
     }
 
 
-    #banans-grid{
-        position: absolute;
-        top: 15vh;
-        display: grid;
-        height: auto;
-        width: 100%;
-        grid-template-columns: 10% 1fr 10%;
-        grid-template-rows: 40px 400px 400px 40px 400px 400px 40px 400px 400px ;
-        /* justify-content: center ; */
-        text-align: center;
+ #banans-grid{
+    position: absolute;
+    top: 15vh;
+    display: grid;
+    height: auto;
+    width: 100%;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: 40px 400px 400px 40px 400px 400px 40px 400px 400px ;
+    text-align: center;
 
-        /* align-items: center; */
-        grid-template-areas:    
-        ".. r1 .."
-        ".. b1 .."
-        ".. p1 .."
-        ".. r2 .."
-        ".. b2 .."
-        ".. p2 .. "
-        ".. r3 .."
-        ".. b3 .. "
-        ".. p3 .."
-      ;
+       
+    grid-template-areas:    
+    ".. r1 .."
+    ".. b1 .."
+    ".. p1 .."
+    ".. r2 .."
+    ".. b2 .."
+    ".. p2 .. "
+    ".. r3 .."
+    ".. b3 .. "
+    ".. p3 ..";
     }
 
     
@@ -280,11 +304,62 @@ li a {
     }
 
     #text1, #text2, #text3, p{
-        text-shadow: 1px 1px white;
+        text-shadow: 0.5px 0.5px white;
+    }
+
+    p{
+        font-weight: bold;
     }
 
 @media screen and (min-width: 1000px) {
     #grid{
-        height: 1300px;
+        padding: 0%;
+        height: 85vh;
+        display: grid;
+        margin-top: 25px;
+        width: 100vw;
+        grid-template-rows: 40% 40%;
+        grid-template-columns: 10% 1fr 1fr 10% ;
+        grid-template-areas:
+        ".. ba ba .."
+        ".. st re ..";
+        grid-gap: 3%;
     }
+
+    h1{
+        font-size: 3rem
+    }
+
+    #banans-grid{
+        position: absolute;
+        top: 15vh;
+        display: grid;
+        height: auto;
+        width: 100%;
+        grid-template-columns: 5% 1fr 1% 1fr 5%;
+        grid-template-rows: 40px 400px 5% 40px 400px 5% 40px 400px;
+        
+        text-align: center;
+
+        
+        grid-template-areas:    
+        ".. b1 .. r1 .."
+        ".. b1 .. p1 .."
+        ".. .. .. .. .."
+        ".. b2 .. r2 .."
+        ".. b2 .. p2 .."
+        ".. .. .. .. .."
+        ".. b3 .. r3 .. "
+        ".. b3 .. p3 .."
+      ;
+    }
+
 }
+
+@media screen and (max-width: 340px){
+    
+
+
+
+}
+
