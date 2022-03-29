@@ -323,10 +323,10 @@ li a {
         grid-template-columns: 5% 1fr 1fr 5%;
         grid-template-rows: 5% 1fr 5% 1fr 20%;
         grid-template-areas: 
-        ".. ru bi .."
-        ".. te bi .."
-        ".. ro bo .."
-        ".. to bo .."
+        ".. ru bi bi"
+        ".. te bi bi"
+        ".. ro bo bo"
+        ".. to bo bo"
         "bp bp bp bp";
     }
 
@@ -349,7 +349,7 @@ li a {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        border-radius: 50px;
+        /* border-radius: 50px; */
     }
     #res-bild2{
         grid-area: bo;
@@ -357,7 +357,7 @@ li a {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        border-radius: 50px;
+        /* border-radius: 50px; */
     }
     #res-bild3{
         grid-area: bp;
