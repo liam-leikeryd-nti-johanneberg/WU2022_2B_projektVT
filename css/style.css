@@ -369,6 +369,103 @@ li a {
         
     }
 
+    #resturang-grid{
+        position: absolute;
+        top: 15vh;
+        bottom: 3vh;
+        display: grid;
+        text-align: center;
+        grid-gap: 0%;
+        height: 100vh;
+        width: 100%;
+        grid-template-columns: 3% 1fr 1fr 3%;
+        grid-template-rows: 6% 1fr 6% 5% 5% 5% 5% 5% 5%;
+        grid-template-areas: 
+        ".. vi bm .."
+        ".. rt bm .."
+        ".. bn me .."
+        ".. bn m1 .."
+        ".. bn m2 .."
+        ".. bn m3 .."
+        ".. bn m4 .."
+        ".. bn m5 .."
+        ".. bn m6 .."
+        ;
+
+
+
+
+    }
+
+    #meny-lista1{
+        grid-area: m1;
+
+    }
+
+    #meny-lista2{
+        grid-area: m2;
+        
+    }
+
+    #meny-lista3{
+        grid-area: m3;
+    }
+
+    #meny-lista4{
+        grid-area: m4;
+    }
+
+    #meny-lista5{
+        grid-area: m5;
+    }
+
+    #meny-lista6{
+        grid-area: m6;
+    }
+
+    #meny{
+        grid-area: me;
+    }
+
+    #restu-bild1{
+        grid-area: bm;
+        background-image: url(../img/resturang1.jpg);
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+
+    #restu-bild2{
+        grid-area: bn;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../img/resturang2.jpg);
+        
+    }
+
+    #restu-bild3{
+        grid-area: bb;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../img/resturang3.jpg);
+        
+    }
+
+    #text-vilka{
+        grid-area: rt;
+    }
+
+    #vilka-vi{
+        grid-area: vi;
+    }
+
+
     @media screen and (min-width: 1000px) {
         #grid{
         padding: 0%;
@@ -446,6 +543,33 @@ li a {
     }
     #res-bild1{
         border-radius: 0px;
+
+    }
+
+    #resturang-grid{
+        position: absolute;
+        top: 15vh;
+        bottom: 3vh;
+        display: grid;
+        text-align: center;
+        grid-gap: 1%;
+        height: 85vh;
+        width: 100%;
+        grid-template-columns: 3% 1fr 1fr 1fr 3%;
+        grid-template-rows: 7% 1fr 1fr 1fr 1fr 1fr 1fr  ;
+        grid-template-areas: 
+        ".. vi bm me .."
+        ".. rt bm m1 .."
+        ".. rt bm m2 .."
+        ".. rt bn m3 .."
+        ".. rt bn m4 .."
+        ".. rt bb m5 .."
+        ".. rt bb m6 .."
+       
+        ;
+
+
+
 
     }
 
