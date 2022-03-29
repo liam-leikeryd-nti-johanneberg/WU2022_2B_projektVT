@@ -72,7 +72,7 @@ h1{
 
 #Banan{
     grid-area: ba;
-    background-image: url(/img/allan-nygren--xvKQuNtOhI-unsplash.jpg);
+    background-image: url(../img/allan-nygren--xvKQuNtOhI-unsplash.jpg);
     background-size: cover;
     text-decoration: none;
     color: black;
@@ -83,7 +83,7 @@ h1{
 
 #Affar{
     grid-area: st;
-    background-image: url(/img/sydney-rae-_-6iQvIunqA-unsplash.jpg);
+    background-image: url(../img/klubbor.jpg);
     background-size: cover;
     text-decoration: none;
     border-radius: 50px;
@@ -91,7 +91,7 @@ h1{
 
 #Resturang{
     grid-area: re;
-    background-image: url(/img/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    background-image: url(../img/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
     background-size: cover;
     text-decoration: none;
     border-radius: 50px;
@@ -271,7 +271,7 @@ li a {
 
     #bild2{
         grid-area: b2;
-        background-image: url(/img/karaktär.jpg);
+        background-image: url(../img/karaktär.jpg);
         border-radius: 50px;
         background-size: cover;
     }
@@ -288,7 +288,7 @@ li a {
 
     #bild3{
         grid-area: b3;
-        background-image: url(/img/bunker.jpg);
+        background-image: url(../img/bunker.jpg);
         border-radius: 50px;
         background-size: cover;
     }
@@ -311,8 +311,66 @@ li a {
         font-weight: bold;
     }
 
-@media screen and (min-width: 1000px) {
-    #grid{
+    #shop-grid{
+        position: absolute;
+        top: 15vh;
+        bottom: 3vh;
+        display: grid;
+        text-align: center;
+        grid-gap: 1%;
+        height: 100vh;
+        width: 100%;
+        grid-template-columns: 5% 1fr 1fr 5%;
+        grid-template-rows: 5% 1fr 5% 1fr 20%;
+        grid-template-areas: 
+        ".. ru bi .."
+        ".. te bi .."
+        ".. ro bo .."
+        ".. to bo .."
+        "bp bp bp bp";
+    }
+
+    #res-rubrik1{
+        grid-area: ru;
+
+    }
+    #res-rubrik2{
+        grid-area: ro;
+    }
+    #res-text1{
+        grid-area: te;
+    }
+    #res-text2{
+        grid-area: to;
+    }
+    #res-bild1{
+        grid-area: bi;
+        background-image: url(../img/golfstore1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50px;
+    }
+    #res-bild2{
+        grid-area: bo;
+        background-image: url(../img/klubbor.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50px;
+    }
+    #res-bild3{
+        grid-area: bp;
+        background-image: url(../img/golfshop2.jpg);
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+
+    @media screen and (min-width: 1000px) {
+        #grid{
         padding: 0%;
         height: 85vh;
         display: grid;
@@ -328,6 +386,8 @@ li a {
 
     h1{
         font-size: 3rem
+
+
     }
 
     #banans-grid{
@@ -353,6 +413,42 @@ li a {
         ".. b3 .. p3 .."
       ;
     }
+
+    #shop-grid{
+        position: absolute;
+        top: 15vh;
+        bottom: 3vh;
+        display: grid;
+        text-align: center;
+        grid-gap: 0;
+        height: 85vh;
+        width: 100%;
+        grid-template-columns: 5% 1fr 1fr 1fr 5%;
+        grid-template-rows: 5% 20% 15% 1fr;
+        grid-template-areas: 
+        ".. ru .. ro .."
+        ".. te .. to .."
+        ".. .. .. .. .."
+        "bi bi bp bo bo"
+        
+        
+       
+
+    }
+
+    #res-bild3{
+        border-radius: 0px;
+
+    }
+    #res-bild2{
+        border-radius: 0px;
+
+    }
+    #res-bild1{
+        border-radius: 0px;
+
+    }
+
 
 }
 
