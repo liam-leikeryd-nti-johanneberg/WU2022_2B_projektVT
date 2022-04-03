@@ -54,6 +54,8 @@ h1{
     text-shadow: 1.5px 1.5px black;
 }
 
+
+
 #grid{
     padding: 5%;
     margin-top: 10px;
@@ -129,8 +131,8 @@ h1{
 }
 
 .burger{
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 30px;
     position: fixed;
     right: 10%;
     top: 3%;
@@ -310,6 +312,9 @@ li a {
     p{
         font-weight: bold;
     }
+    section{
+        font-weight: bold;
+    }
 
     #shop-grid{
         position: absolute;
@@ -467,16 +472,16 @@ li a {
 
     .logga{
         position: fixed;
-        left: 3%;
-        height: 10%;
-        width: 10%;
+        left: 1%;
+        height: 6vh;
+        width: auto;
     
     }
     .logga2{
         position: absolute;
         left: 1%;
-        height: 9%;
-        width: 9%;
+        height: 4vh;
+        width: auto;
     }
     
 
@@ -601,9 +606,27 @@ li a {
     h2{
         font-size: 1.2rem;
     }
+
+    p{
+        font-size: 1rem;
+    }
     
 
 
 
+}
+
+@media  screen and (max-width: 300px) {
+    h1{
+        font-size: 1rem;
+    }
+    h2{
+        font-size: 0.8rem;
+    }
+    
+    p{
+        font-size: 0.6rem;
+    }
+    
 }
 
