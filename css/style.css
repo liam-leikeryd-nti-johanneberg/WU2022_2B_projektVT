@@ -465,6 +465,21 @@ li a {
         grid-area: vi;
     }
 
+    .logga{
+        position: fixed;
+        left: 3%;
+        height: 10%;
+        width: 10%;
+    
+    }
+    .logga2{
+        position: absolute;
+        left: 1%;
+        height: 9%;
+        width: 9%;
+    }
+    
+
 
     @media screen and (min-width: 1000px) {
         #grid{
@@ -576,7 +591,16 @@ li a {
 
 }
 
-@media screen and (max-width: 340px){
+@media screen and (max-width: 500px){
+    
+    
+    h1{
+        font-size: 1.4rem;
+    }
+
+    h2{
+        font-size: 1.2rem;
+    }
     
 
 
