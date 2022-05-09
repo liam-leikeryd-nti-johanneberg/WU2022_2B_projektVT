@@ -38,7 +38,8 @@ prevBtn.addEventListener('click', ()=> {
 });
 
 carouselSlide.addEventListener('transitionend', ()=>{
-    console.log('Fired');
+    if(carouselImages[counter].id ==='lastClone')
 });
+
 
 
