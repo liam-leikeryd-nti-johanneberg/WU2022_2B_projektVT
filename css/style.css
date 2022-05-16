@@ -280,6 +280,8 @@ li a {
         grid-area: p1;
         position: absolute;
         top: 5%;
+        columns: 3;
+        text-align: left;
     }
     
     #rubrik2{
@@ -296,7 +298,9 @@ li a {
     #text2{
         grid-area: p2;
         position: absolute;
-        top: 5%;    
+        top: 5%;
+        columns: 2;
+        text-align: left;    
     }
 
     #rubrik3{
@@ -314,6 +318,7 @@ li a {
         grid-area: p3;
         position: absolute;
         top: 5%;
+        text-align: left;
     }
 
     h2{
